@@ -2,7 +2,6 @@
 
 import {
   Box,
-  Button,
   Container,
   Flex,
   Heading,
@@ -45,28 +44,29 @@ const Card = ({ heading, icon, navigateTo }: CardProps) => {
       p={5}
       cursor="pointer"
       onClick={handleNavigate}
+      _hover={{
+        borderColor: 'blue.500', // Change to desired hover border color
+        boxShadow: 'lg', // Apply a larger shadow on hover
+      }}
+      transition="all 0.3s ease"
     >
-      <Stack align="start" spacing={2}>
+      <Stack align="center" spacing={2}>
         <Flex
           w={16}
           h={16}
           align="center"
           justify="center"
           color="white"
-          rounded="full"
+          rounded="md"
           bg={useColorModeValue('gray.100', 'gray.700')}
         >
           {icon}
         </Flex>
         <Box mt={2}>
-          <Heading size="md">{heading}</Heading>
-          {/* <Text mt={1} fontSize="sm">
-            {description}
-          </Text> */}
+          <Heading size="md" textAlign="center">
+            {heading}
+          </Heading>
         </Box>
-        <Button variant="link" colorScheme="blue" size="sm">
-          Learn more
-        </Button>
       </Stack>
     </Box>
   );
@@ -148,11 +148,11 @@ export default function Cards() {
     <Box p={4}>
       <Stack spacing={4} as={Container} maxW="3xl" textAlign="center">
         <Heading fontSize={{ base: '2xl', sm: '4xl' }} fontWeight="bold">
-          Course Schedule
+          My Journey
         </Heading>
         <Text color="gray.600" fontSize={{ base: 'sm', sm: 'lg' }}>
-          Explore the schedule below to find more about the topics, readings,
-          and activities planned for each class.
+          The course was not only immensely enjoyable but also profoundly
+          enriching, vastly deepening my grasp of leadership principles.
         </Text>
       </Stack>
 

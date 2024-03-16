@@ -1,6 +1,6 @@
 import { Flex } from '@chakra-ui/react';
 
-import SecondClass from '~/lib/components/Blogs/SecondClass';
+import FourthClass from '~/lib/components/Blogs/FourthClass';
 
 const IntroBlog = () => {
   return (
@@ -13,7 +13,7 @@ const IntroBlog = () => {
       mb={8}
       w="full"
     >
-      <SecondClass />
+      <FourthClass />
     </Flex>
   );
 };
