@@ -16,8 +16,9 @@ import {
   FcAbout,
   FcAssistant,
   FcCollaboration,
-  FcDonate,
+  FcApprove,
   FcManager,
+  FcHeadset,
 } from 'react-icons/fc';
 
 interface CardProps {
@@ -104,7 +105,7 @@ export default function Cards() {
         'Rachel Weldon (BS)',
       ],
       activities: ['In-class Listening Exercise', 'Leadership Ladder Step #1'],
-      icon: <Icon as={FcDonate} w={10} h={10} />,
+      icon: <Icon as={FcHeadset} w={10} h={10} />,
       navigateTo: 'third-class',
     },
     {
@@ -139,7 +140,7 @@ export default function Cards() {
       topic: 'Collaboration & Wrap-up',
       readings: ['Outsmart Your Biases (OCP)'],
       activities: ['Murder Mystery', 'Course takeaways due 3/14 by 11:59PM'],
-      icon: <Icon as={FcManager} w={10} h={10} />,
+      icon: <Icon as={FcApprove} w={10} h={10} />,
       navigateTo: 'last-class',
     },
   ];

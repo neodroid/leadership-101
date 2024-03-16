@@ -8,6 +8,7 @@ import {
   Heading,
   Text,
   Image,
+  Link,
 } from '@chakra-ui/react';
 
 export default function CallToActionWithVideo() {
@@ -47,10 +48,25 @@ export default function CallToActionWithVideo() {
             </Text>
           </Heading>
           <Text color="gray.500">
-            Hello! I&apos;m Kevin, and I&apos;m thrilled to share the insights
-            I&apos;ve gained from Nate&apos;s Leadership class in the Spring
-            2024 semester at NYU. This enlightening journey has opened my eyes
-            to the profound and intricate aspects of leadership.
+            Hello! I&apos;m{' '}
+            <Link
+              href="https://www.linkedin.com/in/kevinahmad/"
+              isExternal
+              textDecoration="underline"
+            >
+              Kevin
+            </Link>
+            , and I&apos;m thrilled to share the insights I&apos;ve gained from{' '}
+            <Link
+              href="https://www.linkedin.com/in/nate-pettit-83574b1a/"
+              isExternal
+              textDecoration="underline"
+            >
+              Nate&apos;s
+            </Link>{' '}
+            Leadership class in the Spring 2024 semester at NYU. This
+            enlightening journey has opened my eyes to the profound and
+            intricate aspects of leadership.
           </Text>
         </Stack>
         <Flex
